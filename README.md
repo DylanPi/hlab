@@ -1,8 +1,8 @@
 # Hao Lab · 郝耀耀课题组主页
 
-浙江大学脑机智能全国重点实验室 郝耀耀课题组官方网站（Vite + Vue 3 · 中英双语 · 深色科技×人文风格）。
+浙江大学脑机智能全国重点实验室 郝耀耀课题组官方网站。
 
-推送到 `main` 分支后,GitHub Actions 自动构建并发布到 GitHub Pages(纯静态产物,hash 路由 + 相对 base,可托管于任何静态服务器)。
+
 
 ## 目录结构
 
@@ -31,7 +31,7 @@ npm run build      # 产物在 site/dist/,纯静态
 npm run regress    # 自动化回归清单（需本地浏览器,见 scripts/regress.mjs 头注）
 ```
 
-## 更新网站内容（不需要懂代码）
+## 更新网站内容
 
 所有内容都在 `site/src/data/` 下的 JSON 文件里：
 
@@ -48,7 +48,7 @@ npm run regress    # 自动化回归清单（需本地浏览器,见 scripts/regr
 
 成员照片放 `site/public/images/`，然后在 `people.json` 对应成员的 `photo` 填 `images/文件名`；不填自动显示姓氏/首字母艺术占位。
 
-## 意笔交互框架（首页已并回 + 隐藏路由）
+## 意笔交互框架
 
 首页 hero 按钮与亮点卡已接入「意笔 InkIntent」神经交互：指针逼近/停驻时元素外围浮现克制的青色光环响应（青=系统回应），触屏/reduced-motion/flag off 自动静默为零。
 整体关闭开关：`localStorage.inkintent = 'off'`（改后刷新页面生效）。
