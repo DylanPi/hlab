@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!--
+      SEO/OG note: og:image and twitter:image must be absolute URLs (crawlers do not resolve
+      relative paths), so they are hard-coded to the Aliyun server IP 47.96.131.192:8080 until a
+      real domain + ICP filing are in place. When that happens, replace the IP prefix in both
+      image meta tags below (do not touch the other meta lines). Google Fonts load with
+      display=swap so text renders immediately with the fallback while fonts stream in.
+    -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b14" />
+    <title>Hao Lab · 郝耀耀课题组 | 浙江大学脑机智能全国重点实验室</title>
+    <meta name="description" content="浙江大学脑机智能全国重点实验室郝耀耀课题组：植入式脑机接口、运动神经编解码、汉字书写脑机接口、临床转化研究。让思维直达世界。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hao Lab · 郝耀耀课题组" />
+    <meta property="og:description" content="植入式脑机接口 · 意念写字 · 临床转化 —— 浙江大学脑机智能全国重点实验室" />
+    <meta property="og:locale" content="zh_CN" />
+    <!-- og:image 需绝对地址；正式域名启用后替换下面的 IP 前缀 -->
+    <meta property="og:image" content="http://47.96.131.192:8080/images/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Hao Lab · 郝耀耀课题组 · 浙江大学脑机智能全国重点实验室" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hao Lab · 郝耀耀课题组" />
+    <meta name="twitter:description" content="植入式脑机接口 · 意念写字 · 临床转化 —— 浙江大学脑机智能全国重点实验室" />
+    <meta name="twitter:image" content="http://47.96.131.192:8080/images/og-card.png" />
+    <!-- Space Grotesk + JetBrains Mono are self-hosted (src/assets/fonts, OFL) so the
+         Latin UI is stable on networks where fonts.googleapis.com is slow or blocked.
+         Only the Chinese serif display face still streams from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

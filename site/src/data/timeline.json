@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2020.01",
+    "title": { "zh": "国内首例植入式脑机接口临床转化", "en": "First invasive BCI clinical translation in China" },
+    "desc": {
+      "zh": "与浙大二院神经外科合作，高位截瘫志愿者植入电极，用“意念”控制机械手完成握手、喝水等动作。",
+      "en": "With the Second Affiliated Hospital, a paralyzed volunteer controlled a robotic hand to shake hands and drink via an invasive BCI."
+    }
+  },
+  {
+    "date": "2024.04",
+    "title": { "zh": "“意念写字”成为现实", "en": "\"Handwriting by thought\" became reality" },
+    "desc": {
+      "zh": "侵入式脑机接口脑控机械臂书写汉字：100 个常用汉字离线分类正确率 91.3%，志愿者用意念书写“浙江大学脑机接口”。",
+      "en": "Brain-controlled robotic arm writes Chinese characters: 91.3% offline accuracy on 100 common characters."
+    }
+  },
+  {
+    "date": "2025",
+    "title": { "zh": "“脑写汉字”新突破 · 类脑智能大赛一等奖", "en": "New \"brain-writing\" breakthrough · Contest first prize" },
+    "desc": {
+      "zh": "“脑写汉字”发表于 Advanced Science，1000 常用字库最高识别率 91.1%；获类脑智能（脑机接口）大赛一等奖，侵入式 BCI 工作获国际 BCI Award 提名。",
+      "en": "Brain-writing published in Advanced Science, up to 91.1% on a 1000-character library; first prize in the Brain-Inspired Intelligence (BCI) Contest and an international BCI Award nomination."
+    }
+  },
+  {
+    "date": "2026.03",
+    "title": { "zh": "Nature Communications：手写运动的多维编码", "en": "Nature Communications: multidimensional coding of handwriting" },
+    "desc": {
+      "zh": "首次系统揭示运动皮层对手写运动的多维编码机制，区分笔画与提笔的神经编码，为高性能“意念打字”奠定理论基础（博士生王泽滨为第一作者）。",
+      "en": "First systematic account of how motor cortex multidimensionally encodes handwriting, distinguishing pen-down and pen-up states (first author: Ph.D. student Zebin Wang)."
+    }
+  }
+]

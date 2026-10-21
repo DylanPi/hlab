@@ -1,0 +1,327 @@
+/* ===== styles/main.css — Hao Lab design system (dark-tech x humanist) ===== */
+/* [EN header added H-line 2026-10-09; original Chinese notes below remain authoritative for tuning history.] */
+/* [Deep Signal visual pass 2026-10-20: layered surfaces, editorial type scale, static
+   atmosphere layer, self-hosted Latin fonts. Brand colors and the ink CSS-variable bus
+   are unchanged; canvas colors stay in src/theme.js.] */
+/* Global design tokens, element defaults and shared UI primitives (.card/.btn/.tag/
+   .grid/.section/.page-head). Color semantics: --accent #38d6ff cyan = system/neural
+   response, --warm #ffb45c amber = human input. Accessibility: global :focus-visible
+   ring; prefers-reduced-motion disables reveal animation and smooth scrolling. */
+/* ---- Self-hosted Latin fonts: variable woff2, latin subset, OFL licenses alongside ---- */
+/* Space Grotesk 300-700 and JetBrains Mono 100-800 are variable files, so one file per
+   family covers every weight used by the UI. Chinese body text intentionally stays on the
+   system PingFang/YaHei stack; only the serif display face comes from Google Fonts. */
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../assets/fonts/space-grotesk-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("../assets/fonts/jetbrains-mono-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* ---- Design tokens & element defaults: custom properties on :root, base resets ---- */
+/* ---- Hao Lab 设计系统 · 深色科技×人文 ---- */
+:root {
+  /* Surfaces: three opaque tiers + one raised tier for hover/inset panels */
+  --bg-0: #070b14;
+  --bg-1: #0c1322;
+  --bg-2: #131c31;
+  --bg-3: #182441;
+  --surface-glass: rgba(11, 18, 33, 0.78);
+  --ink: #e8eef8;
+  --ink-dim: #9fb0ca;
+  --ink-faint: #7e91ad;
+  --accent: #38d6ff;
+  --accent-2: #7c8cff;
+  --warm: #ffb45c;
+  --line-soft: rgba(120, 150, 200, 0.09);
+  --line: rgba(120, 150, 200, 0.16);
+  --line-strong: rgba(140, 175, 225, 0.34);
+  --grad: linear-gradient(120deg, #38d6ff, #7c8cff);
+  --grad-soft: linear-gradient(120deg, rgba(56, 214, 255, 0.14), rgba(124, 140, 255, 0.12));
+  --font-sans: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+  --font-en: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-serif: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
+  --r-sm: 10px;
+  --radius: 18px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+  --shadow-card: 0 18px 50px -38px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.035);
+  --shadow-lift: 0 30px 70px -36px rgba(0, 0, 0, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --glow-cyan: 0 0 26px rgba(56, 214, 255, 0.14);
+  --glow-warm: 0 0 22px rgba(255, 180, 92, 0.16);
+  --ease-out: cubic-bezier(0.22, 0.8, 0.28, 1);
+  --dur-fast: 0.2s;
+  --dur-base: 0.32s;
+  --nav-h: 68px;
+  --content-max: 1120px;
+  --content-gap: clamp(4rem, 8vw, 7rem);
+  --text-xs: 0.72rem;
+  --text-sm: 0.82rem;
+  --text-base: 1rem;
+  --text-lg: 1.06rem;
+  --text-h2: clamp(1.65rem, 3.2vw, 2.15rem);
+  --text-hero: clamp(2.8rem, 7vw, 5rem);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; color-scheme: dark; }
+body {
+  margin: 0;
+  background: var(--bg-0);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+::selection { background: rgba(56, 214, 255, 0.24); color: #fff; }
+a { color: var(--accent); text-decoration: none; transition: color var(--dur-fast) ease, opacity var(--dur-fast) ease; }
+a:hover { opacity: 0.82; }
+img { max-width: 100%; display: block; }
+button, input, select, textarea { font: inherit; }
+h1, h2, h3, h4 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+
+/* Slim dark scrollbar; color-scheme keeps native controls/inline widgets dark too. */
+* { scrollbar-width: thin; scrollbar-color: rgba(124, 140, 255, 0.35) transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(56, 214, 255, 0.34), rgba(124, 140, 255, 0.34));
+  border: 2px solid var(--bg-0);
+  border-radius: var(--r-pill);
+}
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, rgba(56, 214, 255, 0.55), rgba(124, 140, 255, 0.55)); }
+
+/* Static atmosphere: two soft auroras + a faint engineering grid. Painted on a fixed
+   negative-z layer so every default-background section inherits the same depth. No
+   per-frame work, and it is hidden from assistive tech by App.vue (aria-hidden). */
+.bg-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(58% 46% at 84% 6%, rgba(124, 140, 255, 0.1), transparent 64%),
+    radial-gradient(46% 40% at 6% 24%, rgba(56, 214, 255, 0.07), transparent 66%),
+    radial-gradient(72% 58% at 50% 108%, rgba(124, 140, 255, 0.06), transparent 72%);
+}
+.bg-atmosphere::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(120, 150, 200, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 150, 200, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(78% 70% at 50% 34%, #000 0%, transparent 78%);
+  mask-image: radial-gradient(78% 70% at 50% 34%, #000 0%, transparent 78%);
+}
+@media (max-width: 760px) {
+  .bg-atmosphere::before { background-size: 48px 48px; opacity: 0.65; }
+}
+
+/* ---- Keyboard focus visibility (a11y): global focus ring on keyboard navigation ---- */
+/* ---- 键盘焦点可见性（无障碍：全局焦点样式） ---- */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+a:focus-visible, button:focus-visible { opacity: 1; }
+.btn.primary:focus-visible { outline-color: #fff; box-shadow: 0 0 0 6px rgba(56, 214, 255, 0.2); }
+
+/* Skip link: first focusable element in the shell; visually hidden until focused. */
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -120px;
+  z-index: 200;
+  padding: 0.65rem 1rem;
+  border-radius: var(--r-pill);
+  background: var(--bg-3);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  font-size: 0.88rem;
+  box-shadow: var(--shadow-lift);
+  transition: top var(--dur-fast) var(--ease-out);
+}
+.skip-link:focus { top: 1rem; opacity: 1; }
+
+.en { font-family: var(--font-en); font-optical-sizing: auto; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* ---- Layout: page container and vertical section rhythm (.alt = banded section) ---- */
+/* ---- 布局 ---- */
+.container { width: min(var(--content-max), calc(100% - 3rem)); margin: 0 auto; }
+.section { padding-block: var(--content-gap); position: relative; }
+.section.alt {
+  background: linear-gradient(180deg, rgba(14, 23, 42, 0.86), rgba(10, 17, 32, 0.94));
+  border-block: 1px solid var(--line-soft);
+}
+/* Consecutive banded sections share one hairline instead of stacking two borders. */
+.section.alt + .section.alt { border-top-color: transparent; }
+
+/* ---- Headings: eyebrow kicker, section titles, gradient text helper ---- */
+/* ---- 标题 ---- */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.9rem;
+}
+.eyebrow::before {
+  content: ""; width: 20px; height: 1.5px; border-radius: 2px;
+  background: var(--grad); box-shadow: 0 0 10px rgba(56, 214, 255, 0.35);
+}
+h2.sec-title {
+  font-size: var(--text-h2); line-height: 1.28; margin: 0 0 0.8rem;
+  font-weight: 700; letter-spacing: 0.01em;
+}
+.sec-desc { color: var(--ink-dim); max-width: 640px; margin: 0 0 2.4rem; font-size: var(--text-lg); }
+.grad-text {
+  background: var(--grad); -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+
+/* ---- Cards: layered surface + hairline top-light; .hov lifts on hover ---- */
+/* ---- 卡片 ---- */
+.card {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0) 38%),
+    var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+.card.hov:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 214, 255, 0.42);
+  box-shadow: var(--shadow-lift), 0 0 28px rgba(56, 214, 255, 0.08);
+}
+
+/* ---- Buttons: .btn with primary (gradient) and ghost variants ---- */
+/* ---- 按钮 ---- */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.74rem 1.5rem;
+  border-radius: var(--r-pill); font-size: 0.95rem; font-weight: 600; cursor: pointer;
+  border: 1px solid transparent; line-height: 1.4;
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) ease,
+    color var(--dur-fast) ease,
+    background-color var(--dur-fast) ease;
+}
+.btn.primary {
+  background: var(--grad); color: #06101f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), 0 10px 26px -16px rgba(56, 214, 255, 0.7);
+}
+.btn.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), 0 14px 36px -14px rgba(56, 214, 255, 0.75);
+  opacity: 1;
+}
+.btn.ghost {
+  border-color: rgba(120, 150, 200, 0.34);
+  color: var(--ink);
+  background: rgba(19, 28, 49, 0.42);
+}
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); background: rgba(56, 214, 255, 0.06); }
+.btn:active { transform: translateY(0); }
+
+/* ---- Tags/badges: .tag with default cyan, .warm and .purple variants ---- */
+/* ---- 徽标 ---- */
+.tag {
+  display: inline-block; padding: 0.16rem 0.62rem; border-radius: 7px;
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em;
+  background: rgba(56, 214, 255, 0.1); color: var(--accent);
+  border: 1px solid rgba(56, 214, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.tag.warm { background: rgba(255, 180, 92, 0.1); color: var(--warm); border-color: rgba(255, 180, 92, 0.3); }
+.tag.purple { background: rgba(124, 140, 255, 0.1); color: var(--accent-2); border-color: rgba(124, 140, 255, 0.3); }
+
+/* ---- Scroll-reveal: classes toggled by the v-reveal directive; reduced-motion keeps content visible ---- */
+/* ---- 滚动进入动画 ---- */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+  .card.hov:hover, .btn:hover, .btn:active { transform: none; }
+  .skip-link { transition: none; }
+}
+
+/* ---- Grids: responsive column helpers; collapse to 1 column on narrow screens ---- */
+/* ---- 通用网格 ---- */
+.grid { display: grid; gap: 1.2rem; }
+.grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 900px) {
+  .grid.cols-3, .grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .grid.cols-2, .grid.cols-3, .grid.cols-4 { grid-template-columns: 1fr; }
+  :root { --content-gap: 3.4rem; }
+}
+
+/* ---- Inner-page header: editorial index/title/lead + static aurora and signal rule ---- */
+/* ---- 页面头部（内页） ---- */
+.page-head {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: calc(var(--nav-h) + 2.3rem) 0 3rem;
+}
+.page-head::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto -10%;
+  height: 420px;
+  z-index: -1;
+  background:
+    radial-gradient(46% 62% at 76% 18%, rgba(124, 140, 255, 0.16), transparent 70%),
+    radial-gradient(40% 54% at 12% 10%, rgba(56, 214, 255, 0.1), transparent 70%);
+  pointer-events: none;
+}
+.page-head::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 214, 255, 0.4), rgba(124, 140, 255, 0.22), transparent);
+  opacity: 0.7;
+  pointer-events: none;
+}
+.page-head h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.8vw, 3.2rem);
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.7rem;
+  font-weight: 900;
+}
+.page-head p { color: var(--ink-dim); max-width: 680px; margin: 0; font-size: 1.02rem; }

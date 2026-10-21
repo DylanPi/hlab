@@ -1,0 +1,32 @@
+{
+  "name": { "zh": "郝耀耀课题组", "en": "Hao Lab" },
+  "university": { "zh": "浙江大学 脑机智能全国重点实验室", "en": "National Key Laboratory of Brain-Machine Intelligence, Zhejiang University" },
+  "tagline": { "zh": "让思维直达世界", "en": "Let thought reach the world" },
+  "email": "yaoyaoh@zju.edu.cn",
+  "piPage": "https://person.zju.edu.cn/yaoyaoh",
+  "address": {
+    "zh": "良渚实验室（浙江大学医学中心）· 浙江省杭州市余杭区文一西路1369号",
+    "en": "Liangzhu Laboratory (Zhejiang University Medical Center), No. 1369 Wenyi West Road, Yuhang District, Hangzhou, China"
+  },
+  "stats": [
+    { "value": "15", "labelKey": "statsPapers" },
+    { "value": "2020", "labelKey": "statsFirst" },
+    { "value": "91.3%", "labelKey": "statsAcc" },
+    { "value": "2025", "labelKey": "statsAward" }
+  ],
+  "partners": [
+    {
+      "name": { "zh": "王跃明教授团队 · 求是高等研究院", "en": "Prof. Yueming Wang's group · Qiushi Academy" },
+      "desc": { "zh": "长期合作，共同完成意念写字与手写编解码系列工作", "en": "Long-term collaboration on handwriting BCI series" }
+    },
+    {
+      "name": { "zh": "浙江大学医学院附属第二医院 神经外科", "en": "Neurosurgery, Second Affiliated Hospital, ZJU" },
+      "desc": { "zh": "植入式脑机接口临床转化（国内首例）", "en": "First invasive BCI clinical translation in China" }
+    },
+    {
+      "name": { "zh": "南湖脑机交叉研究院", "en": "Nanhu Institute for Brain-Machine Crossover" },
+      "desc": { "zh": "兼聘与合作研究", "en": "Joint appointment and research" }
+    }
+  ],
+  "gallery": []
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "decoding",
+    "icon": "wave",
+    "title": { "zh": "运动神经编解码", "en": "Motor neural coding & decoding" },
+    "role": { "zh": "读懂运动编码", "en": "Read the code" },
+    "desc": {
+      "zh": "大脑如何编码抓握、书写等多维运动参数？我们用电生理与计算建模回答，并据此构建高性能解码算法。",
+      "en": "How does the brain encode multidimensional movement such as grasping and handwriting? We answer with electrophysiology and computational modeling, and build high-performance decoders."
+    },
+    "question": {
+      "zh": "大脑如何用神经元群体活动表征书写的笔画、轨迹与握力？这些表征能否被实时、稳定地读出？",
+      "en": "How do neuronal populations represent strokes, trajectories and grip force of handwriting — and can those representations be read out in real time?"
+    },
+    "approach": {
+      "zh": "在非人灵长类与临床受试者的皮层植入记录上开展电生理分析，结合计算建模构建高性能实时解码算法。",
+      "en": "Intracortical recordings in non-human primates and human participants, analyzed with electrophysiology and computational modeling to build high-performance real-time decoders."
+    },
+    "highlights": [
+      { "zh": "揭示手写运动的多维编码机制（Nat. Commun. 2026）", "en": "Revealed multidimensional coding of handwriting (Nat. Commun. 2026)" },
+      { "zh": "笔画与提笔状态的神经编码差异", "en": "Distinct coding of pen-down vs pen-up states" },
+      { "zh": "面向植入式 BCI 的极简特征提取方法", "en": "Minimal feature-extraction pipeline for implantable BCIs" }
+    ],
+    "rep": { "zh": "Nature Communications, 2026（博士生王泽滨一作）", "en": "Nature Communications, 2026 (first author: Zebin Wang)" },
+    "links": [
+      { "label": { "zh": "Nature Communications (2026)", "en": "Nature Communications (2026)" }, "url": "https://doi.org/10.1038/s41467-026-70536-7" },
+      { "label": { "zh": "Communications Biology (2026)", "en": "Communications Biology (2026)" }, "url": "https://doi.org/10.1038/s42003-026-10144-9" }
+    ],
+    "members": ["Zebin Wang"]
+  },
+  {
+    "id": "implant",
+    "icon": "chip",
+    "title": { "zh": "植入式 BCI 与微系统", "en": "Implantable BCI & microsystems" },
+    "role": { "zh": "造出植入系统", "en": "Build the implant" },
+    "desc": {
+      "zh": "从电极、信号处理到系统集成，打造长期稳定、可临床使用的植入式脑机接口微系统。",
+      "en": "From electrodes and signal processing to system integration — implantable BCI microsystems built for long-term stability and clinical use."
+    },
+    "question": {
+      "zh": "如何让植入式脑机接口在体内长期稳定工作，并压缩到可临床部署的形态与功耗？",
+      "en": "How can an implantable BCI work stably inside the body for years, and shrink to a form factor and power budget fit for clinical deployment?"
+    },
+    "approach": {
+      "zh": "自研微电极阵列与力学自适应颅内探针，设计低功耗信号处理链路，在啮齿类、非人灵长类与人体上完成全链条验证。",
+      "en": "Custom microelectrode arrays and mechanically adaptive probes, low-power signal-processing chains, validated across rodents, non-human primates and humans."
+    },
+    "highlights": [
+      { "zh": "脑机接口电极与植入式微系统设计", "en": "BCI electrodes and implantable microsystem design" },
+      { "zh": "啮齿类、非人灵长类到人的全链条实验平台", "en": "Experimental platforms from rodents and primates to humans" },
+      { "zh": "面向实时解码的低功耗信号处理", "en": "Low-power signal processing for real-time decoding" }
+    ],
+    "rep": { "zh": "64 通道“硬币大小”全植入式脑机接口微系统（IEEE BioCAS 2024）", "en": "64-channel coin-sized fully implantable BCI microsystem (IEEE BioCAS 2024)" },
+    "links": [
+      { "label": { "zh": "PNAS (2024)", "en": "PNAS (2024)" }, "url": "https://doi.org/10.1073/pnas.2403380121" },
+      { "label": { "zh": "IEEE BioCAS (2024)", "en": "IEEE BioCAS (2024)" }, "url": "https://doi.org/10.1109/BioCAS61083.2024.10798410" }
+    ],
+    "members": ["Penghai Li", "Jingzhuo Han", "Guanxi Liu", "Feiyang Chen"]
+  },
+  {
+    "id": "hanzi",
+    "icon": "hanzi",
+    "title": { "zh": "汉字书写脑机接口", "en": "Chinese handwriting BCI" },
+    "role": { "zh": "写出汉字", "en": "Write characters" },
+    "desc": {
+      "zh": "汉字的笔画结构让“意念书写”比拉丁字母更难。我们突破汉字书写的特殊编码机制，让机械臂一笔一画写出汉字。",
+      "en": "Character strokes make thought-writing harder than Latin scripts. We cracked the special coding of Chinese handwriting so a robotic arm writes it stroke by stroke."
+    },
+    "question": {
+      "zh": "汉字的笔画结构远比拉丁字母复杂——皮层的书写编码能否支撑“意念书写”汉字？",
+      "en": "Chinese characters are structurally far more complex than alphabetic scripts — can cortical writing coding support thought-writing of characters?"
+    },
+    "approach": {
+      "zh": "解码手写运动的笔画轨迹，驱动机械臂一笔一画书写；进而发展“脑写汉字”高速文本输出范式。",
+      "en": "Decode stroke trajectories of handwriting to drive a robotic arm writing stroke by stroke, and push toward fast brain-to-text output."
+    },
+    "highlights": [
+      { "zh": "全球首次侵入式 BCI 脑控机械臂书写汉字（2024）", "en": "World-first invasive BCI writing Chinese characters via robotic arm (2024)" },
+      { "zh": "100 常用汉字离线正确率 91.3%", "en": "91.3% offline accuracy on 100 common characters" },
+      { "zh": "“脑写汉字”1000 常用字库最高识别率 91.1%（Adv. Sci. 2025）", "en": "\"Brain-writing\": up to 91.1% on a 1000-character library (Adv. Sci. 2025)" }
+    ],
+    "rep": { "zh": "媒体报道：中新网、央视等（2024–2025）", "en": "Covered by CNS, CCTV and more (2024–2025)" },
+    "links": [
+      { "label": { "zh": "Advanced Science (2025)", "en": "Advanced Science (2025)" }, "url": "https://doi.org/10.1002/advs.202505492" },
+      { "label": { "zh": "媒体报道 · 中国新闻网 (2024)", "en": "Media · Chinanews (2024)" }, "url": "http://www.chinanews.com.cn/sh/2024/04-23/10204478.shtml" }
+    ],
+    "members": ["Guangxiang Xu"]
+  },
+  {
+    "id": "clinic",
+    "icon": "heart",
+    "title": { "zh": "临床转化与神经调控", "en": "Clinical translation & neuromodulation" },
+    "role": { "zh": "走向病床", "en": "Reach the bedside" },
+    "desc": {
+      "zh": "与浙大二院神经外科深度合作，让技术走向病床边，面向高位截瘫、渐冻症、中风等失去运动与表达能力的患者群体开展研究。",
+      "en": "In deep collaboration with neurosurgery at SAHZU, we bring technology to the bedside, studying for patients who lost movement or speech — paralysis, ALS, stroke."
+    },
+    "question": {
+      "zh": "植入式脑机接口如何安全走向病床边，为失去运动与表达能力的患者重建交流与操控？",
+      "en": "How can implantable BCIs safely reach the bedside and restore communication and control for patients who lost movement and speech?"
+    },
+    "approach": {
+      "zh": "与浙江大学医学院附属第二医院神经外科合作开展国内首例植入式脑机接口临床转化研究，并探索癫痫、抑郁症等疾病的神经调控应用。",
+      "en": "Partnering with neurosurgery at the Second Affiliated Hospital, Zhejiang University, on China's first invasive BCI clinical translation study, plus neuromodulation explorations in epilepsy and depression."
+    },
+    "highlights": [
+      { "zh": "国内首例植入式 BCI 临床转化（2020）", "en": "First invasive BCI clinical translation in China (2020)" },
+      { "zh": "面向交流与操控的临床场景验证", "en": "Clinical validation for communication and control" },
+      { "zh": "研发难治性抑郁症深脑刺激系统并完成产业转化；长期探索 BCI 在癫痫等疾病中的应用", "en": "Developed a DBS system for treatment-resistant depression, translated to industry; exploring BCI applications in epilepsy" }
+    ],
+    "rep": { "zh": "参与 2020 国内首例临床转化研究", "en": "Contributed to the 2020 first-in-China clinical translation" },
+    "links": [
+      { "label": { "zh": "Frontiers in Neuroscience (2023)", "en": "Frontiers in Neuroscience (2023)" }, "url": "https://doi.org/10.3389/fnins.2023.1133928" },
+      { "label": { "zh": "媒体报道 · 央视网 (2025)", "en": "Media · CCTV (2025)" }, "url": "https://news.cctv.com/2025/07/16/ARTIVEP3YSDekQCmLfuyZARU250716.shtml" }
+    ],
+    "members": []
+  }
+]

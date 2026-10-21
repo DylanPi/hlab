@@ -1,0 +1,19 @@
+# EditorConfig — keeps every editor consistent with the repo's existing style.
+# Added H-line 2026-10-09 (decision: config-only tooling, no linter/formatter).
+# https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.md]
+# Markdown hard-wraps by convention; trailing spaces can be meaningful (line breaks).
+trim_trailing_whitespace = false
+
+[*.{sh}]
+indent_size = 4

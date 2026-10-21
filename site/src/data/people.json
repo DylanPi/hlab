@@ -1,0 +1,157 @@
+{
+  "pi": {
+    "name": {
+      "zh": "郝耀耀",
+      "en": "Yaoyao Hao"
+    },
+    "title": {
+      "zh": "博士 · 研究员 · 博士生导师",
+      "en": "Ph.D. · Research Professor · Doctoral Advisor"
+    },
+    "photo": "images/pi-haoyaoyao.png",
+    "interests": [
+      {
+        "zh": "植入式脑机接口",
+        "en": "Implantable BCIs"
+      },
+      {
+        "zh": "脑机接口电极与微系统",
+        "en": "BCI electrodes & microsystems"
+      },
+      {
+        "zh": "运动神经编解码",
+        "en": "Motor neural coding"
+      },
+      {
+        "zh": "动物与临床应用",
+        "en": "Animal & clinical applications"
+      }
+    ],
+    "bio": {
+      "zh": "郝耀耀，浙江大学脑机智能全国重点实验室研究员、博士生导师，南湖脑机交叉研究院兼聘研究员。2013 年获浙江大学生物医学工程博士学位，先后在法国国家科学院（CNRS，2013–2015）与美国贝勒医学院（2018–2021）从事博士后研究，2021 年回浙大。长期从事植入式脑机接口研究，在运动神经编解码、汉字书写脑机接口、脑机接口微系统与临床转化等方向取得系列突破：作为骨干完成国内首例非人灵长类植入式脑机接口系统（入选 2016 年度中国高校十大科技进展），参与国内首例植入式脑机接口临床转化研究（2020），实现临床“意念写字”（2024）、“脑写汉字”（Advanced Science 2025）与手写多维编码（Nature Communications 2026）。以第一或通讯作者在 Advanced Science、eLife、PNAS、Nature Communications 等期刊发表系列论文（本站收录代表性论文 15 篇），申请/授权发明专利 20 余项（两项已转化）；参与项目获吴文俊人工智能创新一等奖，团队工作获 2025 年国际 BCI Award 提名（12 强）、2025 年类脑智能（脑机接口）大赛一等奖。",
+      "en": "Yaoyao Hao is a Research Professor and doctoral advisor at the National Key Laboratory of Brain-Machine Intelligence, Zhejiang University, and an adjunct researcher at the Nanhu BCI Institute. He received his Ph.D. in biomedical engineering from Zhejiang University (2013) and did postdoctoral training at CNRS, France (2013–2015) and Baylor College of Medicine, USA (2018–2021), before returning to ZJU in 2021. His research spans implantable BCIs, motor neural coding, Chinese handwriting BCIs, and clinical translation: as a core member he built China's first non-human-primate implantable BCI system (highlighted among China's Top-10 university science advances of 2016), contributed to the first-in-China invasive BCI clinical study (2020), and delivered clinical \"thought writing\" (2024), brain-writing of Chinese characters (Advanced Science 2025), and multidimensional handwriting coding (Nature Communications 2026). He publishes as first or corresponding author in Advanced Science, eLife, PNAS and Nature Communications (15 selected papers listed on this site) and holds 20+ patents (two translated to industry); he co-received the Wu Wenjun AI Innovation First Prize, and his team was a 2025 International BCI Award nominee and won first prize at the 2025 Brain-Inspired Intelligence (BCI) Contest."
+    },
+    "education": [
+      {
+        "zh": "博士 · 浙江大学生物医学工程系（2013）",
+        "en": "Ph.D., Biomedical Engineering, Zhejiang University (2013)"
+      },
+      {
+        "zh": "博士后 · 法国国家科学院 CNRS（2013–2015）",
+        "en": "Postdoc, CNRS, France (2013–2015)"
+      },
+      {
+        "zh": "博士后 · 美国贝勒医学院（2018–2021）",
+        "en": "Postdoc, Baylor College of Medicine, USA (2018–2021)"
+      },
+      {
+        "zh": "本科 · 电子科技大学生物医学工程",
+        "en": "B.Eng., Biomedical Engineering, UESTC"
+      }
+    ],
+    "links": [
+      {
+        "label": "浙大主页 / ZJU page",
+        "url": "https://person.zju.edu.cn/yaoyaoh"
+      },
+      {
+        "label": "ORCID",
+        "url": "https://orcid.org/0009-0005-2628-8297"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Yaoyao-Hao"
+      }
+    ]
+  },
+  "phd": [
+    {
+      "name": {
+        "zh": "余博文",
+        "en": "Bowen Yu"
+      },
+      "since": "2021",
+      "dir": {
+        "zh": "全自动神经行为训练系统 HABITS（eLife 2025 第一作者；Nature Communications 2026 共同作者）",
+        "en": "Fully autonomous behavioral training system HABITS (first author, eLife 2025; co-author, Nat. Commun. 2026)"
+      },
+      "photo": null
+    },
+    {
+      "name": {
+        "zh": "徐广祥",
+        "en": "Guangxiang Xu"
+      },
+      "since": "2022",
+      "dir": {
+        "zh": "汉字书写脑机接口（Advanced Science 2025“脑写汉字”第一作者；Communications Biology 2026 第一作者）",
+        "en": "Chinese handwriting BCI (first author, Adv. Sci. 2025 & Commun. Biol. 2026)"
+      },
+      "photo": null
+    },
+    {
+      "name": {
+        "zh": "王泽滨",
+        "en": "Zebin Wang"
+      },
+      "since": "2023",
+      "dir": {
+        "zh": "手写运动神经编解码（Nature Communications 2026 第一作者；2025 国际 BCI Award 提名）",
+        "en": "Neural coding of handwriting (first author, Nat. Commun. 2026; 2025 International BCI Award nominee)"
+      },
+      "photo": null
+    },
+    {
+      "name": {
+        "zh": "李鹏海",
+        "en": "Penghai Li"
+      },
+      "since": "2023",
+      "dir": {
+        "zh": "脑机接口电极与微系统（eLife 2025 共同作者；64 通道全植入脑机微系统）",
+        "en": "BCI electrodes & microsystems (co-author, eLife 2025; 64-ch fully implantable microsystem)"
+      },
+      "photo": null
+    },
+    {
+      "name": {
+        "zh": "陈飞扬",
+        "en": "Feiyang Chen"
+      },
+      "since": "2026",
+      "dir": {
+        "zh": "高通量侵入式脑电生理采集系统",
+        "en": "High-throughput invasive electrophysiology acquisition systems"
+      },
+      "photo": null
+    }
+  ],
+  "master": [
+    {
+      "name": {
+        "zh": "韩景卓",
+        "en": "Jingzhuo Han"
+      },
+      "since": "2024",
+      "dir": {
+        "zh": "全植入式脑机接口微系统",
+        "en": "Fully implantable BCI microsystems"
+      },
+      "photo": null
+    },
+    {
+      "name": {
+        "zh": "刘冠希",
+        "en": "Guanxi Liu"
+      },
+      "since": "2025",
+      "dir": {
+        "zh": "硅基高通量多脑区电极",
+        "en": "Silicon-based high-throughput multi-brain-region electrodes"
+      },
+      "photo": null
+    }
+  ],
+  "undergrad": [],
+  "alumni": []
+}

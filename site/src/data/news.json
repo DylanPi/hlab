@@ -1,0 +1,107 @@
+[
+  {
+    "date": "2026-03-17",
+    "cat": "paper",
+    "title": {
+      "zh": "Nature Communications：破解手写脑机接口的多维密码",
+      "en": "Nature Communications: cracking the multidimensional code of handwriting BCI"
+    },
+    "summary": {
+      "zh": "首次系统揭示运动皮层对手写运动的多维编码机制（三维笔尖轨迹、握力、笔压），为意念书写装上“立体眼睛”。博士生王泽滨为第一作者，郝耀耀、王跃明为共同通讯。",
+      "en": "First systematic account of multidimensional motor-cortical coding of handwriting (3D trajectory, grip force, pen pressure). First author: Zebin Wang; co-corresponding: Yaoyao Hao & Yueming Wang."
+    },
+    "source": "知乎（作者投稿）/ 新浪财经",
+    "url": "https://zhuanlan.zhihu.com/p/2017182942187774431",
+    "sourceEn": "Zhihu / Sina Finance"
+  },
+  {
+    "date": "2025-10-16",
+    "cat": "honor",
+    "title": {
+      "zh": "课题组侵入式 BCI 工作获国际 BCI Award 提名（12 强）",
+      "en": "Team's invasive BCI work nominated for the International BCI Award (top 12)"
+    },
+    "summary": {
+      "zh": "“脑写汉字”成果（徐广祥、王泽滨等）入选 2025 国际 BCI 研究奖 12 强提名，颁奖礼于维也纳 IEEE SMC 2025 举行。",
+      "en": "The brain-writing work (Guangxiang Xu, Zebin Wang, et al.) was named among the 12 nominees of the 2025 International BCI Research Award; ceremony at IEEE SMC 2025, Vienna."
+    },
+    "source": "BCI Award 官网",
+    "url": "https://www.bci-award.com/2025",
+    "sourceEn": "BCI Award (official site)"
+  },
+  {
+    "date": "2025-09-24",
+    "cat": "honor",
+    "title": {
+      "zh": "“硬币大小”全植入脑机接口获类脑智能大赛一等奖",
+      "en": "Coin-sized fully implantable BCI wins first prize at brain-inspired intelligence contest"
+    },
+    "summary": {
+      "zh": "无线供电、可全天工作的全植入式脑机接口微系统获“创客天下·杭向未来”类脑智能专项赛一等奖（潮新闻报道）。",
+      "en": "The wirelessly powered, always-on fully implantable BCI microsystem won first prize at the 2025 Brain-Inspired Intelligence (BCI) Contest in Hangzhou."
+    },
+    "source": "潮新闻（腾讯新闻）",
+    "url": "https://news.qq.com/rain/a/20250924A02DUK00",
+    "sourceEn": "Tide News (Tencent)"
+  },
+  {
+    "date": "2025-08-01",
+    "cat": "paper",
+    "title": {
+      "zh": "“脑写汉字”：1000 常用字库最高识别率 91.1%",
+      "en": "\"Brain-writing\": up to 91.1% on a 1000-character library"
+    },
+    "summary": {
+      "zh": "郝耀耀研究员、王跃明教授为通讯作者的汉字书写脑机接口工作发表于 Advanced Science，第一作者为生物医学工程博士生徐广祥。",
+      "en": "The Chinese handwriting BCI work was published in Advanced Science; first author: BME Ph.D. student Guangxiang Xu; corresponding: Yaoyao Hao & Yueming Wang."
+    },
+    "source": "南湖脑机交叉研究院",
+    "url": "https://www.meifengli.com/list_42/3267.html",
+    "sourceEn": "Nanhu BCI Institute"
+  },
+  {
+    "date": "2025-07-16",
+    "cat": "media",
+    "title": {
+      "zh": "央视报道：用意念操控机械手写下“浙江大学”“脑机接口”",
+      "en": "CCTV: writing \"Zhejiang University\" and \"BCI\" with thought-controlled robotic hand"
+    },
+    "summary": {
+      "zh": "志愿者张大伯——我国首例侵入式脑机接口临床志愿者——已能用意念操控机械手书写汉字。",
+      "en": "Volunteer \"Uncle Zhang\", China's first invasive BCI clinical volunteer, writes Chinese characters with thought."
+    },
+    "source": "央视网",
+    "url": "https://news.cctv.com/2025/07/16/ARTIVEP3YSDekQCmLfuyZARU250716.shtml",
+    "sourceEn": "CCTV.com"
+  },
+  {
+    "date": "2024-04-23",
+    "cat": "media",
+    "title": {
+      "zh": "浙江大学首次实现汉字书写脑机接口，“意念写字”成现实",
+      "en": "ZJU realizes Chinese handwriting BCI — \"thought writing\" becomes reality"
+    },
+    "summary": {
+      "zh": "高位截瘫志愿者用意念在脑海中书写，机械臂一笔一画写出“浙江大学脑机接口”八个字；100 常用汉字离线分类正确率 91.3%。",
+      "en": "A paralyzed volunteer imagined writing while a robotic arm wrote the characters; 91.3% offline accuracy on 100 common characters."
+    },
+    "source": "中国新闻网",
+    "url": "http://www.chinanews.com.cn/sh/2024/04-23/10204478.shtml",
+    "sourceEn": "Chinanews.com"
+  },
+  {
+    "date": "2020-01-16",
+    "cat": "media",
+    "title": {
+      "zh": "国内首例植入式脑机接口临床转化研究取得阶段性成果",
+      "en": "First-in-China invasive BCI clinical translation reaches milestone"
+    },
+    "summary": {
+      "zh": "高位截瘫患者通过植入式脑机接口用意念控制机械手，完成握手、喝水等动作。",
+      "en": "A paralyzed patient controlled a robotic hand to shake hands and drink via an invasive BCI."
+    },
+    "source": "浙江大学",
+    "url": "https://www.zju.edu.cn/2020/0117/c41533a1957263/page.htm",
+    "sourceEn": "Zhejiang University"
+  }
+]
